@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+           android:duration="600"
+           android:fillAfter="true"
+           android:fromXDelta="0"
+           android:fromYDelta="0"
+           android:toXDelta="200"
+           android:toYDelta="200"
+    >
+
+</translate>
+
+<!--
+平移动画
+android:fromXDelta    起始点X轴坐标，可以是数值、百分数、百分数p 三种样式，比如 50、50%、50%p
+android:fromYDelta    起始点Y轴从标，可以是数值、百分数、百分数p 三种样式；
+android:toXDelta      结束点X轴坐标
+android:toYDelta      结束点Y轴坐标
+-->

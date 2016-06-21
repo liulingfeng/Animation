@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gridLayoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:animation="@android:anim/slide_in_left"
+                     android:columnDelay="60%"
+                     android:direction="bottom_to_top|right_to_left"
+                     android:directionPriority="row"
+                     android:rowDelay="75%"
+    >
+
+</gridLayoutAnimation>
+
+    <!--
+    gridView子布局加入动画
+    rowDelay:每一行动画开始的延迟。与LayoutAnimation一样，可以取百分数，也可以取浮点数。取值意义为，当前android:animation所指动画时长的倍数。
+    columnDelay：每一列动画开始的延迟。取值类型及意义与rowDelay相同。
+    directionPriority：方向优先级。取值为row,collumn,none，意义分别为：行优先，列优先，和无优先级（同时进行）
+    direction：gridview动画方向。
+    取值有四个：left_to_right：列，从左向右开始动画
+    right_to_left ：列，从右向左开始动画
+    top_to_bottom：行，从上向下开始动画
+    bottom_to_top：行，从下向上开始动画
+    -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".ViewAnimationActivity"
+    >
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:onClick="start"
+        android:text="开启动画"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="240dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#ffff00"
+        />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/flameanim"
+        />
+</RelativeLayout>
+    <!--animateLayoutChanges添加删除控件动画-->
+    <!--
+    LayoutTransaction transitioner = new LayoutTransition();
+    ObjectAnimator animOut = ObjectAnimator.ofFloat(null, "rotation", 0f, 90f, 0f);
+    transitioner.setAnimator(LayoutTransition.DISAPPEARING, animOut); 自定义动画效果-->

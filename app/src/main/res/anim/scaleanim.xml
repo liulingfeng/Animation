@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+       android:fromXScale="0"
+       android:fromYScale="0"
+       android:pivotX="50%"
+       android:pivotY="50%"
+       android:toXScale="2"
+       android:toYScale="2"
+       android:duration="600"
+       android:fillAfter="true"
+       android:repeatCount = "1"
+       android:repeatMode="restart"
+       android:interpolator="@android:interpolator/linear"
+    />
+
+    <!--缩放动画
+    android:fromXScale 起始的X方向上相对自身的缩放比例，浮点值。1.0代表自身无变化
+    android:toXScale   结尾的X方向上相对自身的缩放比例
+    android:fromYScale 起始的Y方向上相对自身的缩放比例
+    android:toYScale   结尾的Y方向上相对自身的缩放比例
+    android:pivotX    缩放起点X轴坐标，可以是数值、百分数、百分数p 三种样式，比如 50、50%、50%p，
+    当为数值时，表示在当前View的左上角，即原点处加上50px，做为起始缩放点；
+    如果是50%，表示在当前控件的左上角加上自己宽度的50%做为起始点；
+    如果是50%p，那么就是表示在当前的左上角加上父控件宽度的50%做为起始点x轴坐标
+    android:pivotY    缩放起点Y轴坐标，取值及意义跟android:pivotX一样
+    fillAfter    如果设置为true，控件动画结束时，将保持动画最后时的状态
+    repeatCount 重复次数
+    android:repeatMode	重复类型
+    android:interpolator  设定插值器
+    -->
+
+<!--
+interpolator 插值器，就是设置动画如何变化,取值有下面几种
+    AccelerateDecelerateInterpolator          在动画开始与介绍的地方速率改变比较慢，在中间的时候加速
+    AccelerateInterpolator                    在动画开始的地方速率改变比较慢，然后开始加速
+    AnticipateInterpolator                    开始的时候向后然后向前甩
+    AnticipateOvershootInterpolator           开始的时候向后然后结束时向前甩一定值后返回最后的值
+    BounceInterpolator                        动画结束的时候弹起,类似皮球跳动
+    CycleInterpolator                         动画循环播放特定的次数，速率改变沿着正弦曲线
+    DecelerateInterpolator                    在动画开始的地方快然后慢
+    LinearInterpolator                        以常量速率改变
+    OvershootInterpolator                     动画结束后向前甩一定值后再回到原来位置
+-->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:duration="800"
+     android:fillAfter="true"
+     android:startOffset="400"
+    >
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1"
+        />
+    <scale
+        android:fromXScale="0.0"
+        android:fromYScale="0.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.4"
+        android:toYScale="1.4"/>
+
+    <rotate
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="720"/>
+</set>
+
+<!--
+动画合集
+startOffset启动时间，默认为立即启动，现在设置的是400毫秒后执行
+-->
